@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKW | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">stronaBKW</a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About & Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="subtitle">Hello, I'm Bartek Winiarski</p>
+                <h1>This is my portfolio.</h1>
+                <p class="hero-desc">
+                    Current second year Software Engineering student at the University of Winchester.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                    <a href="about.html" class="btn btn-secondary">About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Preview -->
+        <section class="featured-projects">
+            <div class="container">
+                <h2>Featured Work</h2>
+                <div class="project-grid">
+                    
+                    <!-- Card 1 (Links to Subpage 1) -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <!-- Replace with <img src="images/proj1.jpg" alt="Project 1"> -->
+                            <div class="placeholder-img">Project 1 Image</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Project One Title</h3>
+                            <p>A quick summary of what this project is and the tools you used to build it.</p>
+                            <a href="projects/project-1.html" class="card-link">Read Case Study &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 (Links to Subpage 2) -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <div class="placeholder-img">Project 2 Image</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Project Two Title</h3>
+                            <p>A quick summary of what this project is and the tools you used to build it.</p>
+                            <a href="projects/project-2.html" class="card-link">Read Case Study &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> stronaBKW. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

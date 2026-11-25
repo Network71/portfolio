@@ -108,6 +108,7 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .btn {
@@ -227,4 +228,277 @@ footer {
     .nav-links.active {
         display: flex;
     }
+}
+
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0;
+}
+
+.card-image img {
+    max-width: 100%;
+    width: auto;
+    height: 310px;
+    object-fit: contain;
+}
+
+
+
+/* --- Project Showcase Page --- */
+.project-showcase {
+    padding: 4rem 0 5rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--accent);
+}
+
+.project-showcase h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+.project-lead {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 720px;
+    margin-bottom: 2rem;
+}
+
+.project-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    max-width: 760px;
+}
+
+.project-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    color: var(--text-muted);
+}
+
+.feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+.feature-list strong {
+    color: var(--text-main);
+}
+
+
+
+
+/* --- Projects Overview List --- */
+.projects-page {
+    padding: 4rem 0 5rem;
+}
+
+.page-header {
+    margin-bottom: 2.5rem;
+}
+
+.page-header p {
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+.projects-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.project-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-color);
+}
+
+.project-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.35rem;
+}
+
+.project-info h2 a {
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.project-info h2 a:hover {
+    color: var(--accent);
+}
+
+.project-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+    .project-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+.project-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.35rem;
+}
+
+.project-title-row h2 {
+    margin-bottom: 0; /* Handled by .project-title-row */
+}
+
+.lang-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    background-color: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    line-height: 1.3;
+}
+
+
+
+/* --- About Page --- */
+.about {
+    padding: 4rem 0 5rem;
+}
+
+.about-me h1 {
+    font-size: clamp(2.1rem, 4.5vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.about-me p {
+    font-size: 1.08rem;
+    color: var(--text-muted);
+    max-width: 68ch;
+    line-height: 1.7;
+}
+
+/* Experience Section (Software & Languages) */
+.about-software,
+.about-section {
+    margin-top: 2.75rem;
+    padding-top: 2.25rem;
+    border-top: 1px solid var(--border-color);
+    max-width: 720px;
+}
+
+.about-software h2,
+.about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.about-software h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-top: 1.25rem;
+    margin-bottom: 0.65rem;
+}
+
+.about-software h3:first-of-type {
+    margin-top: 0;
+}
+
+.skill-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.skill-tags li {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border-color);
+    padding: 0.38rem 0.85rem;
+    border-radius: 999px;
+    transition: border-color 0.2s, transform 0.2s, color 0.2s;
+}
+
+.skill-tags li:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+
+/* Contact & Social Links */
+.contact-email {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.contact-email strong {
+    color: var(--text-main);
+    margin-right: 0.25rem;
+}
+
+.contact-email a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.contact-email a:hover {
+    border-bottom-color: var(--accent);
 }

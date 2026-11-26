@@ -502,3 +502,15 @@ footer {
 .contact-email a:hover {
     border-bottom-color: var(--accent);
 }
+
+.lang-switch {
+    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.lang-switch:hover {
+    border-color: var(--accent);
+}

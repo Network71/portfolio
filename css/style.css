@@ -80,7 +80,42 @@ body {
 }
 
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  position: relative;
+  top: 2px; /* Nudges the flag slightly lower—adjust to 1px–4px as needed */
+  transition: transform 0.15s ease;
+}
 
+.lang-switch:hover {
+  transform: scale(1.05);
+}
+
+.lang-switch svg {
+  display: block;
+  border-radius: 2px;
+}
+
+.lang-switch svg.flag-pl {
+  border: 1px solid #000000;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 
 
